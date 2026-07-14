@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Number Guessing Game</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>AI Number Guessing</h1>
+
+    <p>
+        Think of a number between <b>1</b> and <b>100</b>.
+        Don't tell the AI!
+    </p>
+
+    <h2 id="guess">Loading...</h2>
+    <h3 id="attempts">Attempts: 1</h3>
+
+    <div class="buttons">
+
+        <button id="low">Too Low</button>
+
+        <button id="high">Too High</button>
+
+        <button id="correct">Correct ✅</button>
+
+    </div>
+
+    <button id="restart">Restart</button>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
